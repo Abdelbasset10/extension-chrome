@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "My Extension",
+  "name": "mailGPT",
   "version": "1.0",
-  "description": "Description of your extension",
+  "description": "chrome extension to generate email with openAi's GPT AI",
   "icons": {
-    "16": "check.png",
-    "48": "check.png",
-    "128": "check.png"
+    "16": "extLogo.png",
+    "48": "extLogo.png",
+    "128": "extLogo.png"
   },
   "permissions": [
     "activeTab",
@@ -28,7 +28,7 @@
 
   "browser_action": {
     "default_title": "My Extension",
-    "default_icon": "check.png",
+    "default_icon": "extLogo.png",
     "default_popup": "popup.html"
   }
 }

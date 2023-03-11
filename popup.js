@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async function() {
           document.querySelector("#response").textContent = 'generating...';
             console.log(response)
           var emailBody = response.body;
-          var apiKey = "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";
+          var apiKey = "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";
           var apiUrl = "https://api.openai.com/v1/completions";
           var headers = {
             "Content-Type": "application/json",
