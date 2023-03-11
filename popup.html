@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Extension</title>
+    <script src="popup.js" nonce="random_value_here"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        width: 300px;
+      }
+      
+      #generate-response {
+        padding: 10px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        background-color: #F62F53;
+        /* box-shadow: 0px 10px 20px rgba(246, 47, 83, 0.4); */
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        
+      }
+      
+      #generate-response:hover {
+        background-color: #f7113b;
+        box-shadow: 0px 10px 20px rgba(246, 47, 83, 0.4);
+      }
+      
+      #response {
+        margin-top: 10px;
+        padding: 30px;
+        background-color: #fff;
+        font-size: large;
+        border-radius: 3px;
+        margin-bottom: 10px;
+      }
+      .logo{
+        max-width:100%;
+        height:30px;
+        padding: 2;
+        padding-bottom: 10px;
+        display: flex;
+        gap: 2px;
+        align-items: center;
+      }
+
+      img{
+        width: fit-content;
+        max-height: 100%;
+        height: 30px;
+        
+      }
+      .img{
+        padding-right: 2px;
+      }
+      .buttons{
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #copy{
+        background-color:#f5f5f5;
+        border: 1px solid #F62F53;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        color: #F62F53;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+      }
+      #copy:hover{
+        background-color:#EDD6DA;
+      }
+      .svg1{
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo"><div class="img"><img src="./logo.png" alt=""></div> <h5>KYO Conseil</h5></div>
+    <h5 id="response" class="myText"></h5>
+    <div class="buttons">
+      <button id="copy"><img class="svg1" src="./copySvg.svg" alt=""> copy</button>
+      <button id="generate-response"><img class="svg1 svg2" src="./robot.svg" alt=""> Generate Response</button>
+    </div>
+  </body>
+</html>

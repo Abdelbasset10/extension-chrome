@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "My Extension",
+  "version": "1.0",
+  "description": "Description of your extension",
+  "icons": {
+    "16": "check.png",
+    "48": "check.png",
+    "128": "check.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "https://api.openai.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+
+  "browser_action": {
+    "default_title": "My Extension",
+    "default_icon": "check.png",
+    "default_popup": "popup.html"
+  }
+}
