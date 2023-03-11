@@ -6,6 +6,8 @@ TO start using the code do please follow this steps :
 - go to gmail and choose any email 
 - click on the extension
 
+IMPORTANT NOTE : ACCRODING THAT WE DIDN'T ADD THE EXTENSION GLOBALLY BECUASE IT NEEDS $5 . SO YOU HAVE TO GRAP YOUR OPANAI KEY FROM OPENAI WEBSITE AND PUT IT IN "POPUP.JS FILE IN "apiKey" EXACTLY LINE NUMBER 19
+
 
 here is description  how extension works : 
 The Chrome extension would provide a convenient way for users to generate responses to emails by leveraging the power of the OpenAI GPT API. It would work by extracting the body of an email and using it as context to generate a response to a prompt/question entered by the user.
