@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>My Extension</title>
+    <script src="https://apis.google.com/js/api.js"></script>
     <script src="popup.js" nonce="random_value_here"></script>
     <style>
       body {
@@ -82,10 +83,25 @@
         height: 12px;
         margin-right: 5px;
       }
+      #input{
+        outline: none;
+        border-radius: 5px;
+        width: 98%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border:none;
+        padding:5px;
+        resize: none;
+      }
+      #input:focus{
+        border: 1px solid #F62F53;
+      }
     </style>
   </head>
   <body>
     <div class="logo"><div class="img"><img src="./extLogo.png" alt=""></div> <h5>mailGPT</h5></div>
+    <!-- <input id="input" type="text"> -->
+    <textarea name="text" id="input" cols="30" rows="1"></textarea>
     <h5 id="response" class="myText"></h5>
     <div class="buttons">
       <button id="copy"><img class="svg1" src="./copySvg.svg" alt=""> copy</button>
