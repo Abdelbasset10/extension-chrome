@@ -14,9 +14,8 @@ document.addEventListener("DOMContentLoaded", async function() {
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.sendMessage(tabs[0].id, {action: "get_email_body"}, function(response) {
           document.querySelector("#response").textContent = 'generating...';
-            console.log(response)
           var emailBody = response.body;
-          var apiKey = "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";
+          var apiKey = "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";
           var apiUrl = "https://api.openai.com/v1/completions";
           var headers = {
             "Content-Type": "application/json",
@@ -35,9 +34,9 @@ document.addEventListener("DOMContentLoaded", async function() {
           })
           .then(response => response.json())
           .then(data => {
-            var responseText = data.choices[0].text.trim();
+            var responseText = data.choices[0].text.trim();    
             document.querySelector("#response").textContent = responseText;
-            console.log(data)
+                    
           })
           .catch(error => {
             console.error(error);
