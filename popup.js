@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", async function() {
           document.querySelector("#response").textContent = 'generating...';
             console.log(response)
           var emailBody = response.body;
-          var apiKey = "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";
+          var apiKey = "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";
           var apiUrl = "https://api.openai.com/v1/completions";
           var headers = {
             "Content-Type": "application/json",
             "Authorization": "Bearer " + apiKey
           };
           var data = {
-            "prompt": "generate me reponse for this email : " + emailBody + "\n\nQ:",
+            "prompt": "can you response to this email for me  : " + emailBody + "\n\nQ:",
             "max_tokens": 300,
             "model":"text-davinci-003",
             "temperature": 0.7,
